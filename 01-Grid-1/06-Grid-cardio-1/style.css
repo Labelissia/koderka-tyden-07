@@ -21,48 +21,74 @@ html { box-sizing: border-box;}
 
 /* Nastyluj jednotlivé bloky podle zadání na obrázku */
 
+.kontejner {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 100px repeat(3, auto) 250px 100px;
+ gap: 20px;
+}
+
 .logo {
 	background-color: #55efc4;
 }
 
 .hlavicka {
 	background-color: #74b9ff;
+	grid-column: 2 / 4;
 }
 
 .menu {
 	background-color: #ff7675;
+	grid-column: 1 ;
+	grid-row: 2;
 }
 
 .clanek1 {
 	background-color: #fdcb6e;
+	grid-column: 2 / 4 ;
+	grid-row: 2 / 4;
 }
 
 .clanek2 {
 	background-color: #a29bfe;
+	grid-column: 1 / 3;
+	grid-row: 4 / 5 ;
 }
 
 .reklama1 {
 	background-color: #d63031;
+	grid-column: 1 ;
+	grid-row: 3;
 }
 
 .reklama2 {
 	background-color: #00b894;
+	grid-column: 3 ;
+	grid-row: 4;
 }
 
 .foto1 {
 	background-color: #e84393;
+	grid-column: 1 ;
+	grid-row: -3;
 }
 
 .foto2 {
 	background-color: #e84393;
+	grid-column: 2 ;
+	grid-row: -3;
 }
 
 .foto3 {
 	background-color: #e84393;
+	grid-column: 3 ;
+	grid-row: -3;
 }
 
 .paticka {
 	background-color: #636e72;
+	grid-column: span 3 ;
+	grid-row: -2;
 }
 
 

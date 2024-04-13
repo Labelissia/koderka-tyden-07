@@ -21,3 +21,44 @@
 
 /* ---------------------------------------------------- */
 /* ZDE NAPIŠ VLASTNÍ CSS */
+
+.kontejner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;   
+}
+
+.druhy {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+}
+
+.ctvrty {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.prvni {
+    grid-column-start: 3;
+}
+
+.treti {
+    grid-column-start: 4;
+}
+/*
+.prvni {
+    order: 3;
+}
+
+.druhy {
+    order: 1;
+}
+
+.treti {
+    order: 4;
+}
+
+.ctvrty {
+    order: 2;
+}*/
